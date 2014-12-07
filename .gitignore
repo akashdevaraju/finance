@@ -1,8 +1,65 @@
+ # OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Ignore bundler config.
 /.bundle
-/.powenv
-/.rspec
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/log/*.log
-/tmp
-/coverage
+vendor/bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+
+# Ignore Database configs
+config/database.yml
+db/schema.rb
+*.rdb
+
+# Ignore Tests & Reports
+.rspec
+/spec/reports/*.*
+capybara-*.html
+coverage/*
+
+# Ignore Zeus socket
+.zeus.sock
+
+# Ignoring Config files
+config/aws.yml
+config/asset_sync.yml
+config/nginx.conf
+config/redis.yml
+#config/application.yml
+
+# Ignore Tests & Reports
+.rspec
+/spec/reports/*.*
+capybara-*.html
+coverage
+
+# Ignore CSS & Cache
+*.rbc
+*.sassc
+.sass-cache/
+
+# Ignore Rdoc/Documentation
+/doc/app
+
+# Ignore rails_best_practices report
+rails_best_practices_output.html
+
+# Ignore Zeus socket
+.zeus.sock
+
+# Ignore brakeman report
+brakeman.html
+
+# Ignore file uploads
+/public/uploads
+/public/media
+/public/sitemap.*
+
+# Ignore precompiled assets
+/public/assets
