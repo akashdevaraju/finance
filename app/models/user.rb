@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   def set_basic_entry_types
     EntryType.create(name: 'Other income', positive: true, user_id: id)
     EntryType.create(name: 'Other expense', positive: false, user_id: id)
+    EntryType.create(name: 'food', positive: true, user_id: id)
   end
 
   def total_expenses
